@@ -38,7 +38,7 @@ public class PathFindingAlgorithms {
 
         // --- 2. Inicialización ---
         
-        // Todos los nodos inician con distancia "Infinita" (desconocida)
+        // Todos los nodos inician con distancia "Infinita" (desconocida), se ejecuta V veces
         for (String vertex : graph.getVertices()) {
             distances.put(vertex, Integer.MAX_VALUE);
         }

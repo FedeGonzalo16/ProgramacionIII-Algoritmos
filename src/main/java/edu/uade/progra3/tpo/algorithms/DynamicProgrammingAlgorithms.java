@@ -11,7 +11,7 @@ public class DynamicProgrammingAlgorithms {
      * Análisis de Complejidad Temporal: O(K * E) 
 	 * Donde: k es el número máximo de aristas permitidas y E es el número total de aristas en el grafo.
      * K: Es el número máximo de aristas permitidas (maxLength - 1).
-     * E:</strong> Es el número total de aristas en el grafo.
+     * E: Es el número total de aristas en el grafo.
      *  El algoritmo realiza K iteraciones. 
 	 * En cada iteración, recorre todas las aristas (E) para intentar mejorar las rutas encontradas en el paso anterior.
      * O(n^2), ya que el grafo tiene pocas conexiones (es "disperso"). 

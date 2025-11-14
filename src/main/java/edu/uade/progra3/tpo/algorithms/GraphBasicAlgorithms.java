@@ -81,7 +81,7 @@ public class GraphBasicAlgorithms {
 
     /**
      * Método Auxiliar Recursivo para DFS.
-     * Funciona como una pila.
+     * Funciona como una pila, 1 vez por nodo
      */
     private void dfsRecursive(Graph graph, String current, Set<String> visited, List<String> traversalOrder) {
         // Paso 1: Procesar nodo actual (Marcar y Guardar)

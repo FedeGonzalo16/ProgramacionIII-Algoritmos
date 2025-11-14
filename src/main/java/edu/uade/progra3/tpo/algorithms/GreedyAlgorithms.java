@@ -26,7 +26,7 @@ public class GreedyAlgorithms {
         List<String> route = new ArrayList<>();
         
         // Conjunto de ciudades pendientes por visitar (inicialmente todas).
-        // Costo de creación: O(V).
+        // Costo de creación: O(V), proceso lineal
         Set<String> unvisited = new HashSet<>(graph.getVertices());
         
         int totalDistance = 0;

@@ -129,7 +129,7 @@ public class MinimumSpanningTreeAlgorithms {
         // Ordenamos de menor a mayor peso. O(E log E).
         Collections.sort(allEdges);
         
-        // --- 4. Procesamiento y Unión ---
+        // 4. Procesamiento y Unión
         for (KruskalEdge edge : allEdges) {
             // Buscamos a qué conjunto pertenece cada extremo de la arista
             String setA = findSet(forest, edge.from);
@@ -201,6 +201,15 @@ public class MinimumSpanningTreeAlgorithms {
         public int compareTo(KruskalEdge other) {
             // Define el orden natural por peso ascendente
             return Integer.compare(this.weight, other.weight);
+        }
+
+        @Override
+        public String toString() {
+            return "{" +
+                   "de: '" + from + '\'' +
+                   ", a: '" + to + '\'' +
+                   ", peso: " + weight +
+                   '}';
         }
     }
 }
